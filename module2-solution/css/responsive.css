@@ -1,0 +1,105 @@
+* {
+        box-sizing: border-box;
+        font-family: "Gill Sans", sans-serif;
+}
+
+h1 {
+        text-align: center;
+        font-size: 28px;
+}
+
+.row {
+        width: 100%;
+}
+
+p {
+        width: 100px;
+        height: 30px;
+        border: 1px solid black;
+        margin-top: 0px;
+        font-size: 20px;
+}
+
+.p1, .p2, .p3 {
+        position: absolute;
+        top: 0;
+        right: 0;
+}
+
+.p1 {
+        background-color:rgb(216, 45, 125);
+        text-align: center;
+        padding: 2.5px 0;
+}
+
+.p2 {
+        background-color: rgb(219, 23, 53);
+        text-align: center;
+        padding: 2.5px 0;
+}
+
+.p3 {
+        background-color: yellow;
+        text-align: center;
+        padding: 2.5px 0;
+}
+
+@media (min-width: 992px) {
+        .col-1, .col-2, .col-3 {
+                float: left;
+                width: 31%;
+                position: relative;
+                height: fit-content;
+                border: 1px solid black;
+                background-color: grey;
+                margin: 10px;
+        }
+
+        .para {
+                margin-top: 30px;
+                padding: 8px;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+        .col-1, .col-2 {
+                float: left;
+                width: 45%;
+                position: relative;
+                height: fit-content;
+                border: 1px solid black;
+                background-color: grey;
+                margin: 10px;
+        }
+
+        .col-3 {
+                float: left;
+                width: calc(90% + 20px);
+                position: relative;
+                height: fit-content;
+                border: 1px solid black;
+                background-color: grey;
+                margin: 10px;
+        }
+
+        .para {
+                margin-top: 30px;
+                padding: 8px;
+        }
+}
+
+@media (max-width: 767px) {
+        .col-1, .col-2, .col-3 {
+                width: 85%;
+                position: relative;
+                height: fit-content;
+                border: 1px solid black;
+                background-color: grey;
+                margin: 20px auto 20px auto;
+        }
+
+        .para {
+                margin-top: 30px;
+                padding: 8px;
+        }
+}
